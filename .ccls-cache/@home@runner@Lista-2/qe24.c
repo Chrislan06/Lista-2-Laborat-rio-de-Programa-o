@@ -20,11 +20,11 @@ int primo(int maior, int menor) {
 int main(void) {
   int c1, c2, aux;
   float h;
-  for (c1 = 1; c1 <= 5; c1++) {
-    for (c2 = c1; c2 <= 5; c2++) {
+  for (c1 = 1; c1 <= 500; c1++) {
+    for (c2 = c1; c2 <= 500; c2++) {
       h = sqrt(pow(c1, 2) + pow(c2, 2));
       aux = h;
-      if (aux == h && aux <= 5) {
+      if (aux == h && aux <= 500) {
         if (primo(c1,c2) || primo(c1,h) ||primo(c2,h)) {
           printf("(%d , %d ,%d)\n", c1, c2, aux);
         }
